@@ -1,0 +1,25 @@
+.header {
+  position: fixed;
+  top: 0;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logoContainer {
+  width: 2rem;
+}
+
+.logo {
+  max-width: 100%;
+}
+
+.headerCTA {
+  background: none;
+  color: #c62828;
+  font-weight: 900;
+  outline: none;
+  border: none;
+}

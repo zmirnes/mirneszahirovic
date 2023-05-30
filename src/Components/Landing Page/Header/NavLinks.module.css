@@ -1,0 +1,19 @@
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navListItem {
+  display: flex;
+  gap: 1rem;
+}
+
+.link {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.activeLink {
+  color: #c62828;
+}
