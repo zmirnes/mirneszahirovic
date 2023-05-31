@@ -15,3 +15,12 @@ a {
   color: #000000;
   text-decoration: none;
 }
+
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  color: #c62828;
+  transition: 150ms;
+}

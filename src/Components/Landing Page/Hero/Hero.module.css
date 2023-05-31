@@ -1,14 +1,26 @@
 .container {
   width: 100%;
+  padding: 0 5%;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  position: relative;
+  border-bottom: 1px solid #c6282851;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background: url("./../../../assets/hero-bg.svg");
   background-size: cover;
   background-color: #ffffff55;
   background-blend-mode: overlay;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.5rem;
+  animation: backgroundScroll 35s infinite linear;
 }
 
 .title {
@@ -39,4 +51,81 @@
   font-weight: 700;
   font-size: 1.2rem;
   text-decoration: underline;
+}
+
+.videoContainer {
+  flex-basis: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+}
+
+.videoContainer span {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.playBtnContainer {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.464);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2);
+  animation: pulse 3s infinite linear;
+  cursor: pointer;
+}
+
+.playBtnContainer:hover {
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.6) !important;
+}
+
+.playBtn {
+  width: 30%;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2);
+  }
+
+  50% {
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.6);
+  }
+  100% {
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes backgroundScroll {
+  0% {
+    background-position: 50% 0;
+  }
+  100% {
+    background-position: -1000px 0;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .title {
+    font-size: 4.5rem;
+  }
+  .subtitle {
+    font-size: 2rem;
+  }
+  .jobDesc {
+    font-size: 1.2rem;
+  }
 }

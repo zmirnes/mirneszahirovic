@@ -17,3 +17,9 @@
 .activeLink {
   color: #c62828;
 }
+
+@media only screen and (max-width: 568px) {
+  .nav {
+    display: none;
+  }
+}

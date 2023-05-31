@@ -1,11 +1,30 @@
 .header {
-  position: fixed;
+  width: 100%;
+  position: absolute;
   top: 0;
   display: flex;
-  width: 90%;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1rem 5%;
+  transition: 300ms;
+  z-index: 999;
+}
+
+.sticky {
+  position: fixed !important;
+  top: 0;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: 300ms;
+}
+
+.progress {
+  height: 3px;
+  background-color: #c62828;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 300ms;
 }
 
 .logoContainer {
@@ -22,4 +41,19 @@
   font-weight: 900;
   outline: none;
   border: none;
+}
+
+.menuBtn {
+  width: 2rem;
+  display: none;
+}
+
+@media only screen and (max-width: 568px) {
+  .menuBtn {
+    display: block;
+  }
+
+  .headerCTA {
+    display: none;
+  }
 }

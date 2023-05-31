@@ -14,7 +14,7 @@ const NavLinks = () => {
       <ul className={classes.navList}>
         {navLinks.map((link) => (
           <li key={link.name} className={classes.navListItem}>
-            <Link to={link.to} spy={true} smooth={true} offset={-70} duration={100} className={classes.link} activeClass={classes.activeLink}>
+            <Link to={link.to} spy={true} smooth={true} offset={-150} duration={100} className={classes.link} activeClass={classes.activeLink}>
               {link.name}
             </Link>
             {link.to !== "about-me" && <span>/</span>}

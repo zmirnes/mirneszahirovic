@@ -1,0 +1,21 @@
+.logosTrack {
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  background-color: #c62828;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  overflow: scroll;
+}
+
+.logosTrack::-webkit-scrollbar {
+  display: none;
+}
+
+@media only screen and (max-width: 568px) {
+  .logosTrack {
+    justify-content: flex-start;
+  }
+}
