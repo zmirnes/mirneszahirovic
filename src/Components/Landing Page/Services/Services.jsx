@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Services = () => {
   return (
-    <section className={classes.container}>
+    <section id="services" className={classes.container}>
       <motion.span
         initial={{ y: "100%", opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}

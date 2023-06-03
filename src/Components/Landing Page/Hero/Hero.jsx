@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./Hero.module.css";
 import playVideo from "./../../../assets/playVideoBtn.svg";
 import { motion } from "framer-motion";
@@ -8,7 +7,7 @@ const Hero = () => {
     <section id="home" className={classes.container}>
       <div className={classes.background}></div>
       <div className={classes.whoAmI}>
-        <motion.h1 className={classes.title} initial={{ y: "-100%", opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.2 }}>
+        <motion.h1 id="name" className={classes.title} initial={{ y: "-100%", opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.2 }}>
           Mirnes Zahirović
         </motion.h1>
         <motion.h2 className={classes.subtitle} initial={{ y: "-100%", opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 1, delay: 0.4 }}>

@@ -1,7 +1,7 @@
 import React from "react";
 import classes from "./Works.module.css";
 import { motion } from "framer-motion";
-import project1 from "../../../assets/projects-thumbs/project1.png";
+import project1 from "../../../assets/projects-thumbs/project1.webp";
 import project1Logo from "../../../assets/projects-thumbs/project1-logo.svg";
 import githubIcon from "./../../../assets/github.svg";
 import newWindowIcon from "../../../assets/newWindowIcon.svg";
