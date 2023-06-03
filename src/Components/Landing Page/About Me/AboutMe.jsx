@@ -1,26 +1,32 @@
 import React from "react";
 import classes from "./AboutMe.module.css";
 import { motion } from "framer-motion";
-import myImg from "../../../assets/myImg.png";
+// import myImg from "../../../assets/myImg.png";
+import github from "../../../assets/github.svg";
+import linkedin from "../../../assets/linkedin-svgrepo-com.svg";
 
 const AboutMe = () => {
   return (
     <section id="about-me" className={classes.container}>
-      <motion.h1 initial={{ y: "50%", opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1 }} className={classes.sectionTitle}>
+      <motion.h1 initial={{ y: "50%", opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className={classes.sectionTitle}>
         About Me
       </motion.h1>
-      <motion.p initial={{ y: "50%", opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1 }} className={classes.sectionDesc}>
+      <motion.p initial={{ y: "50%", opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className={classes.sectionDesc}>
         Dive into my world where creativity meets technology, and discover the story behind my passion for frontend development and creating digital wonders.
       </motion.p>
       <div className={classes.content}>
         <div className={classes.imgContainer}>
-          <motion.img initial={{ scale: 0 }} whileInView={{ scale: 1 }} transition={{ duration: 1 }} viewport={{ once: true }} src={myImg} alt="Me" />
+          {/* <motion.img initial={{ scale: 1.5 }} whileInView={{ scale: 1 }} transition={{ duration: 0.5 }} viewport={{ once: true }} src={myImg} alt="Me" /> */}
           <div className={classes.socialLinks}>
-            <a href="#linkedin">LinkedIn</a>
-            <a href="#linkedin">GitHub</a>
+            <a href="#linkedin">
+              <img src={linkedin} alt="LinkedIn" />
+            </a>
+            <a href="#linkedin">
+              <img src={github} alt="Github" />
+            </a>
           </div>
         </div>
-        <motion.div initial={{ y: "50%", opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1 }} className={classes.aboutMeText}>
+        <motion.div initial={{ y: "50%", opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className={classes.aboutMeText}>
           <h3>Long story short..</h3>
           <p>
             I am a frontend web developer from a small city Srebrenik in Bosnia and Herzegovina. With a passion for creative design and building intuitive user interfaces, my goal

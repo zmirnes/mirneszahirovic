@@ -4,12 +4,14 @@ import Header from "../../Components/Landing Page/Header/Header";
 import Hero from "../../Components/Landing Page/Hero/Hero";
 import Works from "../../Components/Landing Page/Works/Works";
 import AboutMe from "../../Components/Landing Page/About Me/AboutMe";
+import Services from "../../Components/Landing Page/Services/Services";
 
 const LandingPage = () => {
   return (
     <div className={classes.container}>
       <Header />
       <Hero />
+      <Services />
       <Works />
       <AboutMe />
     </div>
