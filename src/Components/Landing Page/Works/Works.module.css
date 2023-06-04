@@ -106,14 +106,14 @@
 }
 
 .workImageContainer:hover .projectOverlay {
-  display: flex;
+  opacity: 1;
   transition: 300ms;
 }
 
 .projectOverlay {
   transition: 300ms;
   position: absolute;
-  display: none;
+  display: flex;
   top: 0;
   left: 0;
   width: 100%;
@@ -125,6 +125,7 @@
   gap: 1rem;
   color: white;
   text-align: center;
+  opacity: 0;
 }
 
 .overlayLogo {

@@ -8,7 +8,7 @@ import { Link } from "react-scroll";
 const MobileMenu = ({ showMenu, setShowMenu }) => {
   return (
     <div className={`${classes.mobileMenu} ${showMenu && classes.openedMenu}`}>
-      <motion.img
+      <img
         initial={{ x: "100%", opacity: 0 }}
         whileInView={{ x: 0, opacity: 1 }}
         transition={{ delay: 2, duration: 0.1 }}

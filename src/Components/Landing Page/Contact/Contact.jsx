@@ -6,7 +6,7 @@ const Contact = () => {
     <section id="contact" className={classes.container}>
       <h1 className={classes.sectionTitle}>Ready to make exceptional digital experiences?</h1>
       <a href="#letstalk" className={classes.letsTalk}>
-        Let's talk with me.
+        Let's talk with me. <span>👆</span>
       </a>
       <div className={classes.quote}>Elevate your digital presence with captivating front-end designs that leave a lasting impression.</div>
       <div className={classes.aboutMe}>

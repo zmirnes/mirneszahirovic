@@ -16,6 +16,7 @@
 }
 
 .letsTalk {
+  position: relative;
   color: #c62828;
   font-size: 3rem;
   font-weight: 900;
@@ -35,6 +36,13 @@
 
 .letsTalk:hover::after {
   width: 100%;
+}
+
+.letsTalk span {
+  position: absolute;
+  right: 0;
+  bottom: -50%;
+  transform: rotate(-20deg);
 }
 
 .aboutMe {
