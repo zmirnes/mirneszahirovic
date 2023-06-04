@@ -11,6 +11,7 @@
 }
 
 .background {
+  will-change: background-position;
   position: absolute;
   top: 0;
   left: 0;
