@@ -5,10 +5,12 @@ import Hero from "../../Components/Landing Page/Hero/Hero";
 import Works from "../../Components/Landing Page/Works/Works";
 import Services from "../../Components/Landing Page/Services/Services";
 import Contact from "../../Components/Landing Page/Contact/Contact";
+import LetsTalkModal from "../../Components/Landing Page/Contact/LetsTalkModal";
 
 const LandingPage = () => {
   return (
     <div className={classes.container}>
+      <LetsTalkModal />
       <Header />
       <Hero />
       <Services />
