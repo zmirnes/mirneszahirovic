@@ -1,0 +1,38 @@
+.mobileMenu {
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  transition: 300ms;
+  z-index: 999;
+}
+.openedMenu {
+  left: 0;
+  transition: 300ms;
+}
+
+.collapseMenu {
+  display: block;
+  width: 2rem;
+  align-self: flex-end;
+}
+
+.navList {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  list-style: none;
+}
+
+@media only screen and (max-width: 568px) {
+}

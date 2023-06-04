@@ -39,16 +39,28 @@ const works = [
 const Works = () => {
   return (
     <section id="works" className={classes.container}>
-      <motion.h1 initial={{ y: "50%", opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1 }} className={classes.sectionTitle}>
-        My Works
+      <motion.span
+        initial={{ y: "100%", opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ height: "-100%", once: true }}
+        className={classes.preSectionTitle}
+      >
+        WORKS
+      </motion.span>
+      <motion.h1
+        initial={{ y: "100%", opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ height: "-100%", once: true }}
+        className={classes.sectionTitle}
+      >
+        Transforming ideas into reality, coding to create intuitive user experiences.
       </motion.h1>
-      <motion.p initial={{ y: "50%", opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} viewport={{ once: true }} transition={{ duration: 1 }} className={classes.sectionDesc}>
-        Through my frontend development projects, I transform ideas into reality, utilizing technology and coding to create intuitive user experiences that captivate and engage
-        users.
-      </motion.p>
       <div className={classes.worksGrid}>
         {works.map((work, i) => (
           <motion.div
+            key={i}
             initial={{ y: "50%", opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             viewport={{ once: true }}
