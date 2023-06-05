@@ -9,9 +9,6 @@ const MobileMenu = ({ showMenu, setShowMenu }) => {
   return (
     <div className={`${classes.mobileMenu} ${showMenu && classes.openedMenu}`}>
       <img
-        initial={{ x: "100%", opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ delay: 2, duration: 0.1 }}
         src={collapseMenu}
         alt="Collapse menu"
         className={classes.collapseMenu}
@@ -21,7 +18,12 @@ const MobileMenu = ({ showMenu, setShowMenu }) => {
       />
       <ul className={classes.navList}>
         {navLinks.map((link, i) => (
-          <motion.li key={link.to} initial={{ y: "100%", opacity: 0 }} whileInView={{ y: 0, opacity: 1 }} transition={{ delay: i * 0.2, duration: 0.5 }}>
+          <motion.li
+            key={link.to}
+            initial={{ y: "100%", opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: i * 0.2, duration: 0.5 }}
+          >
             <Link
               to={link.to}
               spy={true}

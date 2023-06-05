@@ -5,7 +5,7 @@ import menu from "../../../assets/menu.svg";
 import NavLinks from "./NavLinks";
 import MobileMenu from "./MobileMenu";
 
-const Header = () => {
+const Header = ({ setIsContactFormActive }) => {
   const [sticky, setSticky] = useState(false);
   const [scrollPercentage, setScrollPercentage] = useState(0);
   const [showMenu, setShowMenu] = useState(false);
@@ -38,9 +38,24 @@ const Header = () => {
         <img src={logo} alt="Logo" className={classes.logo} />
       </div>
       <NavLinks />
-      <button className={classes.headerCTA}>Let's Talk</button>
-      {sticky && <div className={classes.progress} style={{ width: `${scrollPercentage}%` }}></div>}
-      <img src={menu} alt="Open menu" className={classes.menuBtn} onClick={showMenuHandler} />
+      <button
+        className={classes.headerCTA}
+        onClick={() => setIsContactFormActive(true)}
+      >
+        Let's Talk
+      </button>
+      {sticky && (
+        <div
+          className={classes.progress}
+          style={{ width: `${scrollPercentage}%` }}
+        ></div>
+      )}
+      <img
+        src={menu}
+        alt="Open menu"
+        className={classes.menuBtn}
+        onClick={showMenuHandler}
+      />
     </header>
   );
 };
