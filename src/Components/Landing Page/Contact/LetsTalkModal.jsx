@@ -22,9 +22,11 @@ const LetsTalkModal = ({ isContactFormActive, setIsContactFormActive }) => {
       .then(
         (result) => {
           console.log("E-pošta je uspješno poslana!", result.text);
+          alert("Email successfully sent!");
         },
         (error) => {
           console.error("Došlo je do greške pri slanju e-pošte:", error.text);
+          alert("Email have error:", error);
         }
       );
 
