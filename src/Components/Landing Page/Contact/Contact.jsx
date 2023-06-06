@@ -22,7 +22,9 @@ const Contact = ({ setIsContactFormActive }) => {
         <span className={classes.adress}>
           Srebrenik, Bosnia and Herzegovina.
         </span>
-        <span className={classes.email}>contact@mirneszahirovic.me</span>
+        <a href="mailto:contact@mirneszahirovic.me" className={classes.email}>
+          contact@mirneszahirovic.me
+        </a>
       </div>
       <footer>
         <span>
